@@ -1,0 +1,43 @@
+.products{
+     
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 80px;
+    border: 1px solid rgb(46, 48, 23);
+    border-radius: 5px;
+}
+
+.head{
+    color: rgb(48, 48, 46);
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.card{
+    width: 40%;
+}
+
+img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.card button{
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+}

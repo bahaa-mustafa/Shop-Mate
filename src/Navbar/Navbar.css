@@ -1,0 +1,18 @@
+
+.navbar{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.active_nav{
+    color: red;
+    font-weight: 900;
+}
+
+/* .active{
+      color: red;
+    font-weight: 900;
+} */

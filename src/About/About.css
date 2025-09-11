@@ -1,0 +1,10 @@
+.about{
+      color: rgb(0, 11, 128);
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 80px;
+    border: 1px solid rgb(0, 51, 128);
+    border-radius: 5px;
+}

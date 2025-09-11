@@ -1,0 +1,18 @@
+.not_found{
+    color: rgb(212, 97, 8);
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 80px;
+    border: 1px solid rgb(212, 97, 8);
+    border-radius: 5px;
+}
+.not_found h3{
+    font-style: italic;
+    font-weight: 900;
+    padding: 10px 20px;
+    border: 1px solid rgb(212, 97, 8);
+    border-radius: 15px 5px; 
+    cursor: pointer;
+}

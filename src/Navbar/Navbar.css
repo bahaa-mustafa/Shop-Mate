@@ -1,5 +1,4 @@
-
-.navbar{
+.navbar {
     padding: 20px 0;
     display: flex;
     justify-content: center;
@@ -7,9 +6,13 @@
     gap: 20px;
 }
 
-.active_nav{
-    color: red;
+.active_nav {
+    /* color: red; */
+    border: 1px solid rgb(46, 48, 23);
+    border-radius: 5px;
+    padding: 5px;
     font-weight: 900;
+    transition: 0.2ms ease;
 }
 
 /* .active{

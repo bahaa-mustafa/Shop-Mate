@@ -24,11 +24,14 @@ function Products() {
       <div className="products">
         <div className="head"><h2>Products page</h2></div>
         <div className="cards">
-          {myFood.map((ele)=>(
+          {myFood.map((ele) => (
             <div className="card" key={ele.id}>
               <img src={ele.image} alt={ele.title} />
               <h3>{ele.title}</h3>
-              <button><NavLink to={`/productdetails/${ele.id}`}>read more</NavLink></button>
+              <div className="btn">
+                <button><NavLink to={`/productdetails/${ele.id}`}>read more</NavLink></button>
+                <button><NavLink to={`/productdetails/${ele.id}`}>ِAdd to cart</NavLink></button>
+              </div>
             </div>
           ))}
         </div>

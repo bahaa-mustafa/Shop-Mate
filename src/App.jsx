@@ -5,9 +5,9 @@ import Home from './Home/Home'
 import Navbar from './Navbar/Navbar'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Products from './Products/Products'
-import Notfound from './Notfound/Notfound'
 import ProductDetails from './Products/ProductDetails'
 import Register from './Register/Register'
+import NotFound from './Notfound/Notfound'
 
 function App() {
 
@@ -24,7 +24,7 @@ function App() {
       <Route path='/products' element={<Products/>}></Route>
       <Route path='/products/productdetails/:id' element={<ProductDetails/>}></Route>
       <Route path='/register' element={<Register/>}></Route>
-      <Route path='*' element={<Notfound/>}></Route>
+      <Route path='*' element={<NotFound/>}></Route>
     </Routes>
     <Footer/>
     </BrowserRouter>

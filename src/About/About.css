@@ -1,31 +1,46 @@
-.about{
-      color: rgb(0, 11, 128);
-    min-height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px 80px;
-    border: 1px solid rgb(0, 51, 128);
-    border-radius: 5px;
+.about {
+  color: rgb(0, 11, 128);
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 80px;
+  border: 1px solid rgb(0, 51, 128);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
-.carts{
+.about a{
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: rgb(70, 188, 41);
+  color: aliceblue;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+.about a:hover{
+  background-color: rgb(52, 140, 30);
+}
+
+.carts {
   display: flex;
   flex-direction: column;
   padding: 50px 100px;
   min-height: 80vh;
 }
 
-.total{
+.total {
   display: flex;
   justify-content: end;
 }
 
-.total p{
+.total p {
   text-align: end;
   margin-right: 20px;
 }
 
-.cart{
+.cart {
   display: flex;
   min-height: 100px;
   max-height: 150px;
@@ -34,28 +49,36 @@
   margin-bottom: 20px;
   align-items: center;
   padding: 5px 20px;
+  width: 100%;
   /* justify-content: space-between; */
 }
 
 .cart .img {
   padding-right: 20px;
 }
-.cart .img img{
+
+.cart .img img {
   aspect-ratio: 1/1;
   object-fit: contain;
   width: 50px;
 }
-
-.actions{
+.text h3{
+  margin-top: 20px;
+}
+.containt{
+  width: 100%;
+}
+.actions {
   margin-left: auto;
   display: flex;
   gap: 20px;
   padding-left: 30px;
   display: flex;
   align-items: center;
+  justify-content: end;
 }
 
-.actions button{
+.actions button {
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 50%;
@@ -63,34 +86,76 @@
   font-size: 0.9em;
 }
 
-.actions .del{
+.actions .del {
   margin-left: 20px;
   color: rgba(0, 0, 0, 0.5);
   width: 50px;
   height: 50px;
 }
 
-.del:hover{
+.del:hover {
   background: red;
   color: rgba(0, 0, 0, 0.8);
 }
 
-.actions .inc{
+.actions .inc {
   width: 40px;
   height: 40px;
-   color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
-.inc:hover{
+
+.inc:hover {
   background: greenyellow;
   color: rgba(0, 0, 0, 0.8);
 }
 
-.actions .dec{
+.actions .dec {
   width: 40px;
   height: 40px;
-   color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
-.dec:hover{
+
+.dec:hover {
   background: red;
   color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .about{
+    margin: 5px 20px;
+  }
+  .carts{
+    padding: 50px 20px;
+  }
+  .cart .text h2{
+    font-size: 0.8em;
+  }
+  .cart .text h3{
+    font-size: 0.7em;
+  }
+  .actions .del{
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .actions .inc{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .actions .dec{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
 }

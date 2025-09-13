@@ -1,5 +1,5 @@
 import { NavLink, useParams } from "react-router-dom"
-import "./About.css"
+import style from "./About.module.css"
 import { useDispatch, useSelector } from "react-redux";
 import { decreaseQuantity, increaseQuantity, removeFromCart } from "../Redux/cartSlice";
 import { Trash2 } from 'lucide-react';
@@ -20,23 +20,23 @@ function About() {
 
   return (
     <>
-      {(items.length === 0) ? <div className="about"><h2>Cart is empty</h2><NavLink to={"/products"}>Shop now</NavLink></div> : <div className="carts">
-        <div className="total">
+      {(items.length === 0) ? <div className={style.about}><h2>Cart is empty</h2><NavLink to={"/products"}>Shop now</NavLink></div> : <div className={style.carts}>
+        <div className={style.total}>
           <p>Total items: {totalQuantity}</p>
           <p>Total price: ${totalPrice.toFixed(2)}</p>
         </div>
-        {items.map((item) => (<div className="cart" key={item.id}>
-          <div className="img"> <img src={item.image} alt={item.image} /></div>
-          <div className="containt">
-            <div className="text">
+        {items.map((item) => (<div className={style.cart} key={item.id}>
+          <div className={style.img}> <img src={item.image} alt={item.image} /></div>
+          <div className={style.containt}>
+            <div className={style.text}>
               <h2>{item.title}</h2>
               <h3>${item.price}</h3>
             </div>
-            <div className="actions">
-              <button className="inc" onClick={() => dispatch(increaseQuantity(item.id))}>+</button>
+            <div className={style.actions}>
+              <button className={style.inc} onClick={() => dispatch(increaseQuantity(item.id))}>+</button>
               <p>{item.quantity}</p>
-              <button className="dec" onClick={() => dispatch(decreaseQuantity(item.id))}>-</button>
-              <button className="del" onClick={() => dispatch(removeFromCart(item.id))}><Trash2 /></button>
+              <button className={style.dec} onClick={() => dispatch(decreaseQuantity(item.id))}>-</button>
+              <button className={style.del} onClick={() => dispatch(removeFromCart(item.id))}><Trash2 /></button>
             </div></div>
         </div>))}
       </div>}

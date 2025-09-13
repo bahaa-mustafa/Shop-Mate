@@ -83,6 +83,10 @@
     font-size: 0.9rem;
     transition: background 0.2s ease;
 }
+.btn button a{
+    color: #fff;
+    font-size: 0.9rem;
+}
 
 .btn button:hover {
     background: #0056b3;

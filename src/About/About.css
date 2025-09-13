@@ -8,3 +8,89 @@
     border: 1px solid rgb(0, 51, 128);
     border-radius: 5px;
 }
+.carts{
+  display: flex;
+  flex-direction: column;
+  padding: 50px 100px;
+  min-height: 80vh;
+}
+
+.total{
+  display: flex;
+  justify-content: end;
+}
+
+.total p{
+  text-align: end;
+  margin-right: 20px;
+}
+
+.cart{
+  display: flex;
+  min-height: 100px;
+  max-height: 150px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+  padding: 5px 20px;
+  /* justify-content: space-between; */
+}
+
+.cart .img {
+  padding-right: 20px;
+}
+.cart .img img{
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  width: 50px;
+}
+
+.actions{
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.actions button{
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+.actions .del{
+  margin-left: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  height: 50px;
+}
+
+.del:hover{
+  background: red;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.actions .inc{
+  width: 40px;
+  height: 40px;
+   color: rgba(0, 0, 0, 0.5);
+}
+.inc:hover{
+  background: greenyellow;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.actions .dec{
+  width: 40px;
+  height: 40px;
+   color: rgba(0, 0, 0, 0.5);
+}
+.dec:hover{
+  background: red;
+  color: rgba(0, 0, 0, 0.8);
+}

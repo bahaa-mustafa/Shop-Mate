@@ -1,0 +1,124 @@
+/* .register{
+     min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 80px;
+    border: 1px solid rgb(46, 48, 23);
+    border-radius: 5px;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+form p{
+    font-style: italic;
+    font-size: 0.9em;
+    color: red;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.form form button{
+    padding: 10px 15px;
+    font-weight: 700;
+    width: 250px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.form form label{
+    font-size: 1.1em;
+    font-weight: 800;
+    text-transform: capitalize;
+    opacity: 70%;
+}
+
+
+.form form input{
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: 1px solid gray;
+    width: 300px;
+    margin-left: 5px;
+} */
+
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: #f4f7fb;
+}
+
+.formCard {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.formTitle {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #444;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #2575fc;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.formActions {
+  text-align: center;
+}
+
+.formActions button {
+  width: 100%;
+  padding: 12px;
+  background: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.formActions button:hover {
+  background: #1a5ad9;
+}

@@ -1,0 +1,161 @@
+/* .products {
+
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 80px;
+}
+
+.head {
+    color: rgb(48, 48, 46);
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+
+.card {
+    width: 28%;
+    padding: 10px;
+    margin: 20px 10px;
+    border: 1px solid rgb(46, 48, 23);
+    border-radius: 5px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.card button {
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;    
+}
+
+.card .btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+
+}
+
+.card .btn a{
+    font-size: 0.8em;
+} */
+
+
+
+
+
+
+.products {
+    padding: 40px 50px;
+    /* max-width: 1200px; */
+    margin: auto;
+}
+
+.head {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.head h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.cards {
+    /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 290px;
+    /* width: 30%; */
+    margin: 20px 10px;
+    border-radius: 5px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0 auto 15px;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+}
+
+.card h3 {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn button {
+    background: #007bff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s ease;
+}
+
+.btn button:hover {
+    background: #0056b3;
+}
+
+.btn button a {
+    text-decoration: none;
+    color: inherit;
+}

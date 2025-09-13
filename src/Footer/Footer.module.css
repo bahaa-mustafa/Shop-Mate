@@ -1,0 +1,104 @@
+/* .footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    color: aliceblue;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+} */
+
+.footer {
+  background: #111;
+  color: #ddd;
+  padding: 2rem 1rem 1rem;
+  margin-top: 3rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 50px;
+}
+
+.footer .container h4{
+    cursor: pointer;
+}
+
+/* Logo */
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo span {
+  color: #007bff;
+}
+
+.logo p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  max-width: 200px;
+}
+
+/* Links */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.links h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.links a {
+  text-decoration: none;
+  color: #bbb;
+  transition: color 0.3s ease;
+  font-size: 0.8em;
+}
+
+.links a:hover {
+  color: #007bff;
+}
+
+/* Social */
+.social h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icons a {
+  color: #bbb;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.icons a:hover {
+  color: #007bff;
+}
+
+/* Bottom */
+.bottom {
+  border-top: 1px solid #333;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+}

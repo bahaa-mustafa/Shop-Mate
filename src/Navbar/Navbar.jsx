@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux"
 import { NavLink } from "react-router-dom"
 import style from "./Navbar.module.css"
+import { Menu } from 'lucide-react';
 
 function Navbar() {
   const items = useSelector((state) => state.cart.items)
@@ -12,38 +13,40 @@ function Navbar() {
         <NavLink to="/">Shop<span>Mate</span></NavLink>
       </div>
 
+      <input type="checkbox" name="menu" id={style.menu} hidden />
       <div className={style.links}>
-        <NavLink 
-          to="/" 
+        <NavLink
+          to="/"
           className={({ isActive }) => isActive ? style.activeNav : ""}
         >
           Home
         </NavLink>
 
-        <NavLink 
-          to="/products" 
+        <NavLink
+          to="/products"
           className={({ isActive }) => isActive ? style.activeNav : ""}
         >
           Products
         </NavLink>
 
-        <NavLink 
-          to="/about" 
+        <NavLink
+          to="/about"
           className={({ isActive }) => isActive ? style.activeNav : style.cartLink}
         >
-          Cart 
+          Cart
           <span className={totalItems > 0 ? style.cartBadge : style.hidden}>
             {totalItems}
           </span>
         </NavLink>
 
-        <NavLink 
-          to="/register" 
+        <NavLink
+          to="/register"
           className={({ isActive }) => isActive ? style.activeNav : ""}
         >
           Account
         </NavLink>
       </div>
+      <label htmlFor={style.menu} className={style.menu_btn}><Menu /></label>
     </nav>
   )
 }
